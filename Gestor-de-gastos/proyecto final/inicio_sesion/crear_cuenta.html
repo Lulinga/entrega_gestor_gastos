@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Gastos - Sign Up</title>
+    <link rel="stylesheet" href="../inicio_sesion/crear_iniciar.css"> <!--CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="shortcut icon" href="../logo_gestor.png">
+</head>
+
+<body>
+    <section class="panel">
+        <h1>Bienvenido al Gestor de Gastos!</h1>
+        <section class="datos">
+            <h1><a href="./panel_inicio.html">◄</a></h1>
+            <h2>Crea una cuenta</h2><br>
+            <p>Ingresa tu nombre de usuario, correo electrónico y contraseña</p><br>
+            <form class="form" method="post" action="../php/crear_cuenta.php"> <!--Ingreso de datos que se almacenarán en una BBDD-->
+                <tr>
+                    <input placeholder="Nombre de usuario" name="nombre_user"><br><br>
+                    <input placeholder="Correo electrónico" name="correo" type="email"><br><br>
+                    <input placeholder="Contraseña" type="password" name="pass"><br><br>
+                </tr>
+                <button type="submit">Continuar</button>
+            </form>
+            <br>
+            <!--Te lleva a iniciar sesion directamente si los datos están correctos (desde PHP)-->
+        </section>
+    </section>
+</body>
+
+</html>

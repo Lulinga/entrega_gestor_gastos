@@ -1,0 +1,39 @@
+body {
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+button {
+    font-family: "Inter";
+    padding: 10px;
+    background-color: lightgray;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 28px;
+}
+
+button:hover {
+    cursor: pointer; 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 300ms; 
+}
+
+.panel {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.botones {
+    margin-top: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+p::before, p::after { /**/
+    content: " ̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶̶ ̶̶̶̶ ̶̶ ̶̶̶ ̶̶̶̶ ̶̶̶̶̶  ";
+    color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
